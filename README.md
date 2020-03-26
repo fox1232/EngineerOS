@@ -7,4 +7,4 @@
 
 Пиши в терминал 
 
-	pastebin run 0nm5b1ju (Пока офф версия)
+	pastebin run SJis63Pi
