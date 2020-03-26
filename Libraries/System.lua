@@ -2410,13 +2410,13 @@ function system.updateDesktop()
 
 	desktopMenu = workspace:addChild(GUI.menu(1, 1, workspace.width, 0x0, 0x696969, 0x3366CC, 0xFFFFFF))
 	
-	local MineOSContextMenu = desktopMenu:addContextMenuItem("MineOS", 0x000000)
-	MineOSContextMenu:addItem(localization.aboutSystem).onTouch = function()
+	local EngineerOSContextMenu = desktopMenu:addContextMenuItem("EngineerOS", 0x000000)
+	EngineerOSContextMenu:addItem(localization.aboutSystem).onTouch = function()
 		local container = GUI.addBackgroundContainer(workspace, true, true, localization.aboutSystem)
 		container.layout:removeChildren()
 		
 		local lines = {
-			"MineOS",
+			"EngineerOS",
 			"Copyright © 2014-" .. os.date("%Y", system.getTime()),
 			" ",
 			"Developers:",
@@ -2455,22 +2455,22 @@ function system.updateDesktop()
 		workspace:draw()
 	end
 
-	MineOSContextMenu:addItem(localization.updates).onTouch = function()
+	EngineerOSContextMenu:addItem(localization.updates).onTouch = function()
 		system.execute(paths.system.applicationAppMarket, "updates")
 	end
 
-	MineOSContextMenu:addSeparator()
+	EngineerOSContextMenu:addSeparator()
 
-	MineOSContextMenu:addItem(localization.logout).onTouch = function()
+	EngineerOSContextMenu:addItem(localization.logout).onTouch = function()
 		system.authorize()
 	end
 
-	MineOSContextMenu:addItem(localization.reboot).onTouch = function()
+	EngineerOSContextMenu:addItem(localization.reboot).onTouch = function()
 		require("Network").broadcastComputerState(false)
 		computer.shutdown(true)
 	end
 
-	MineOSContextMenu:addItem(localization.shutdown).onTouch = function()
+	EngineerOSContextMenu:addItem(localization.shutdown).onTouch = function()
 		require("Network").broadcastComputerState(false)
 		computer.shutdown()
 	end

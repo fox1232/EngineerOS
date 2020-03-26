@@ -17,6 +17,6 @@
 	flashing = "Записуємо EEPROM...",
 	creating = "Створення профілю користувача...",
 	installing = "Встановлення",
-	installed = "MineOS встановлена. Насолоджуйтесь!",
+	installed = "EngineerOS встановлена. Насолоджуйтесь!",
 	reboot = "Перезавантажити"
 }

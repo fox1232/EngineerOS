@@ -1,6 +1,6 @@
 -- Bulgarian Language Pack
 -- Contributed by Pitaya on 18/06/19
--- Български език за MineOS
+-- Български език за EngineerOS
 
 {
 	downloading = "Изтегля се…",
@@ -68,7 +68,7 @@
 	newFile = "Файл",
 	newFileFromURL = "Файл от URL",
 	newImage = "Изображение",
-	newApplication = "Програма за MineOS",
+	newApplication = "Програма за EngineerOS",
 	paste = "Постави",
 	copy = "Копирай",
 	cut = "Изрежи",
